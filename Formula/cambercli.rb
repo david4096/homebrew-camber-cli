@@ -7,7 +7,8 @@ class Cambercli < Formula
   else
     url "https://camber-public-24132152.s3.us-east-2.amazonaws.com/cambercli/download/cambercli_0.7.6-dev_Darwin_x86_64.tar.gz"
     sha256 "997b7c759f5b4cf21560120f784520897cef2f857177ef674d3badf381219649"
-  end  version "0.7.6-dev"
+  end
+  version "0.7.6-dev"
   
 
   def install
