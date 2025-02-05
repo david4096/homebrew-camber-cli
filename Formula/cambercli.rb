@@ -6,7 +6,8 @@ class Cambercli < Formula
   sha256 "4b9134efef17f5be2bf55ee37c92834a0a1956c70d2197091d05978e689b6f68"
 
   def install
-    system "tar", "-xzf", "cambercli_0.7.6-dev_Darwin_arm64.tar.gz"
+    tarball = Dir["#{cached_download}"].first
+    system "tar", "-xzf", tarball
     bin.install "camber"
   end
 
