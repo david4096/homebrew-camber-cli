@@ -6,11 +6,11 @@ class Cambercli < Formula
   sha256 "4b9134efef17f5be2bf55ee37c92834a0a1956c70d2197091d05978e689b6f68"
 
   def install
-    bin.install "cambercli"
+    system "tar", "-xzf", "cambercli_0.7.6-dev_Darwin_arm64.tar.gz"
+    bin.install "camber"
   end
 
   test do
-    system "#{bin}/cambercli", "--version"
+    system "#{bin}/camber", "--version"
   end
 end
-
